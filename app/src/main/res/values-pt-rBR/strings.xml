@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Passagem de Embarque</string>
+    <string name="passenger_label">PASSAGEIRO</string>
+    <string name="boarding_time_label">EMBARQUE</string>
+    <string name="departure_time_label">DECOLAGEM</string>
+    <string name="arrival_time_label">CHEGADA</string>
+    <string name="boarding_in_label">EMBARQUE EM</string>
+    <string name="terminal_label">TERMINAL</string>
+    <string name="gate_label">PORTÃO</string>
+    <string name="seat_label">ASSENTO</string>
+    <string name="countdown_format">%1$02d:%2$02d</string>
+    <string name="time_format">hh:mm a</string>
+</resources>

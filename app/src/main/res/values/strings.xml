@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Boarding Pass</string>
+    <string name="passenger_label">PASSENGER</string>
+    <string name="boarding_time_label">BOARDING TIME</string>
+    <string name="departure_time_label">DEPARTURE</string>
+    <string name="arrival_time_label">ARRIVAL</string>
+    <string name="boarding_in_label">BOARDING IN</string>
+    <string name="terminal_label">TERMINAL</string>
+    <string name="gate_label">GATE</string>
+    <string name="seat_label">SEAT</string>
+    <string name="countdown_format">%1$02d:%2$02d</string>
+    <string name="time_format">hh:mm a</string>
+</resources>
