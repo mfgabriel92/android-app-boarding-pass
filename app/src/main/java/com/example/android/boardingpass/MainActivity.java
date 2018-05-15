@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.android.boardingpass.databinding.ActivityMainBinding;
+import com.example.android.boardingpass.databinding.BoardingTableBinding;
+import com.example.android.boardingpass.databinding.FlightInfoBinding;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -23,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         BoardingPassInfo boardingPassInfo = FakeDataUtils.generateFakeBoardingPassInfo();
 
         mBinding.tvPassengerName.setText(boardingPassInfo.passengerName);
-        mBinding.tvFlightCode.setText(boardingPassInfo.flightCode);
-        mBinding.tvDepartureAirport.setText(boardingPassInfo.originCode);
-        mBinding.tvArrivalAirport.setText(boardingPassInfo.destCode);
+        mBinding.layoutFlightInfo.tvFlightCode.setText(boardingPassInfo.flightCode);
+        mBinding.layoutFlightInfo.tvDepartureAirport.setText(boardingPassInfo.originCode);
+        mBinding.layoutFlightInfo.tvArrivalAirport.setText(boardingPassInfo.destCode);
 
         SimpleDateFormat formatter = new SimpleDateFormat(getString(R.string.time_format), Locale.getDefault());
 
@@ -40,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         String hoursAndMinsUntilBoarding = getString(R.string.countdown_format, hoursUntilBoarding, minutesLessUntilBoarding);
 
         mBinding.tvBoardingInTime.setText(hoursAndMinsUntilBoarding);
-        mBinding.tvBoardTerminal.setText(boardingPassInfo.departureTerminal);
-        mBinding.tvBoardGate.setText(boardingPassInfo.departureGate);
-        mBinding.tvBoardSeat.setText(boardingPassInfo.seatNumber);
+        mBinding.layoutBoardingTable.tvBoardTerminal.setText(boardingPassInfo.departureTerminal);
+        mBinding.layoutBoardingTable.tvBoardGate.setText(boardingPassInfo.departureGate);
+        mBinding.layoutBoardingTable.tvBoardSeat.setText(boardingPassInfo.seatNumber);
     }
 }

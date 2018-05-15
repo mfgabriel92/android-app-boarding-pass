@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLeftRectangle"
+            android:layout_width="64dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+        <ImageView
+            android:id="@+id/imgRightRectangle"
+            android:layout_width="64dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/art_airplane"
+            app:layout_constraintBottom_toTopOf="@+id/tvFlightCode"
+            app:layout_constraintEnd_toEndOf="@+id/imgDivider"
+            app:layout_constraintStart_toStartOf="@+id/imgDivider" />
+
+        <ImageView
+            android:id="@+id/imgDivider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRightRectangle"
+            app:layout_constraintEnd_toStartOf="@+id/imgRightRectangle"
+            app:layout_constraintStart_toEndOf="@+id/imgLeftRectangle"
+            app:layout_constraintTop_toTopOf="@+id/imgLeftRectangle" />
+
+        <TextView
+            android:id="@+id/tvFlightCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UDA 2456"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@+id/imgDivider"
+            app:layout_constraintStart_toStartOf="@+id/imgDivider"
+            app:layout_constraintTop_toTopOf="@+id/imgDivider" />
+
+        <TextView
+            android:id="@+id/tvDepartureAirport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DVO"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLeftRectangle"
+            app:layout_constraintEnd_toStartOf="@+id/imgDivider"
+            app:layout_constraintStart_toStartOf="@+id/imgLeftRectangle"
+            app:layout_constraintTop_toTopOf="@+id/imgLeftRectangle" />
+
+        <TextView
+            android:id="@+id/tvArrivalAirport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POA"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRightRectangle"
+            app:layout_constraintEnd_toEndOf="@+id/imgRightRectangle"
+            app:layout_constraintStart_toEndOf="@+id/imgDivider"
+            app:layout_constraintTop_toTopOf="@+id/imgRightRectangle" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
